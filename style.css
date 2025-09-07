@@ -92,7 +92,7 @@ header {
 }
 
 .ImageCard {
-    width: 48%;
+    width: 660px;
     height: 500px;
     overflow: hidden;
     border-radius: 5%;
@@ -109,7 +109,7 @@ header {
 }
 
 .section-2:hover .ImageCard img {
-filter: invert(500%);
+    filter: invert(500%);
 }
 
 
@@ -132,6 +132,10 @@ footer {
     font-weight: 500;
 }
 
+.Details p {
+    text-align: center;
+}
+
 .footer {
     display: flex;
     align-items: center;
@@ -148,4 +152,43 @@ footer {
 .right a {
     text-decoration: none;
     color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .NavCard {
+        width: 100%;
+        justify-content: center;
+        top: 0%;
+        border-radius: 0%;
+        padding: .5rem 0;
+        font-size: .8rem;
+        gap: .5rem;
+    }
+
+    .Titles {
+        width: 60%;
+    }
+
+    .catalogue{
+        flex-wrap: wrap;
+        gap: .5rem;
+    }
+
+    .catalogue p {
+        font-size: .8rem;
+        padding: 0.2rem 0.5rem;
+    }
+
+    .Titles span {
+        font-size: 2rem;
+    }
+
+    .ImageCard {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
 }
